@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      background-color: rgb(199, 199, 199);
+    }
+    header {
+      width: 97%;
+      margin: 10px;
+      padding: 10px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    main {
+      margin: 20px;
+      padding: 10px;
+      font-family: Arial;
+      border: solid black 2px;
+      width: fit-content;
+    }
+
+    form > * {
+      margin: 10px 0;
+      /*  border-radius: 5px; */
+      /* border: solid black; */
+      width: 50%;
+      /*       border: solid black;
+ */
+    }
+
+    p,
+    ul {
+      font-size: 20px;
+    }
+
+    p {
+      font-weight: bold;
+    }
+
+    ul {
+      margin: 10px;
+      font-style: italic;
+    }
+
+    .butt {
+      width: 200px;
+      height: 30px;
+      font-size: 15px;
+      font-weight: bold;
+      border: solid 2px rgb(50, 50, 50);
+      background: rgb(25, 75, 125);
+      color: rgb(200, 200, 200);
+      border-radius: 5px;
+    }
+  </style>
+  <body>
+    <header>
+      <h1>Список покупок</h1>
+    </header>
+    <main>
+      <p>Выберите продукты, которые желаете приобрести:</p>
+      <form action="mail.php" method="post">
+        <ul type="none">
+          <li>
+            <input type="checkbox" name="smartp" id="smartphone" />
+            <label for="smartphone">Смартфон</label>
+          </li>
+          <li>
+            <input type="checkbox" name="tabl" id="tablet" />
+            <label for="tablet">Планшет</label>
+          </li>
+          <li>
+            <input type="checkbox" name="lap" id="laptop" />
+            <label for="laptop">Ноутбук</label>
+          </li>
+          <li>
+            <input type="checkbox" name="headph" id="headphones" />
+            <label for="headphones">Наушники</label>
+          </li>
+          <li>
+            <input type="checkbox" name="smartw" id="smartwatch" />
+            <label for="smartwatch">Умные часы</label>
+          </li>
+          <li>
+            <input type="checkbox" name="tv" id="tv" />
+            <label for="tv">Телевизор</label>
+          </li>
+        </ul>
+      </form>
+      <form style="text-align: center;">
+        <input type="button" value="Купить" class="butt" />
+      </form>
+    </main>
+  </body>
+</html>
